@@ -739,7 +739,7 @@ class AP(argparse.ArgumentParser):
         raise E(msg)
 
 def main(argv=None):
-    p = AP(prog='qasensei')
+    p = AP(prog='qa-sensei')
     sub = p.add_subparsers(dest='cmd', required=True)
     x = sub.add_parser('plan')
     x.add_argument('--spec', required=True)

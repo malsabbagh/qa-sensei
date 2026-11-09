@@ -31,6 +31,11 @@ else:
 
 
 class PublicCLIControls(unittest.TestCase):
+    def test_canonical_cli_help(self):
+        result = self.cli('--help')
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn('usage: qa-sensei ', result.stdout)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

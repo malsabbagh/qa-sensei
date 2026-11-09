@@ -14,9 +14,12 @@ Snapshot: November 9, 2026. This is an alpha source bootstrap.
 
 ## Validation
 
-Local macOS / Python 3.14.6: 25 deterministic controls passed (17.470 seconds).
-The local source distribution and wheel build passed. Installed CLI and
-publication-archive checks are recorded in the publication checklist.
+Local macOS / Python 3.14.6: 26 deterministic controls passed (final run; includes canonical CLI help).
+The local source distribution and wheel build passed. A fresh installed wheel
+passed CLI smoke checks. The tracked source, fresh Git history and both archive
+formats passed credential-pattern, private-path/link and entropy screening; wheel
+RECORD digests and MIT notices were verified. These checks are not an exhaustive
+guarantee for arbitrary future evidence.
 CI configuration is prepared; no hosted CI run or release is claimed.
 
 ## Not implemented or not qualified
