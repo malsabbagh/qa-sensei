@@ -1,0 +1,28 @@
+name: CLI controls
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Bootstrap controls
+        run: python -m unittest discover -s . -p test_qasensei.py -v
+      - name: Build MIT source and wheel distributions
+        run: |
+          python -m pip install "build>=1.2,<2" "setuptools>=77,<85" wheel
+          python -m build --no-isolation --sdist --wheel
+      - name: Installed CLI smoke check
+        run: |
+          python -m pip install --no-deps dist/*.whl
+          cd "$RUNNER_TEMP"
+          qa-sensei capabilities --json

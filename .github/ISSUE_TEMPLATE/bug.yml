@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a control or behavior failure with a safe reproduction.
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Include the CLI version, command and outcome. Exclude credentials, raw private logs and real user data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Platform, Python version and source commit

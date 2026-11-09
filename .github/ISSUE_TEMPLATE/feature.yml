@@ -1,0 +1,25 @@
+name: Milestone or feature
+description: Track a bounded change and its acceptance evidence.
+title: "[Milestone] "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Testable acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: progress
+    attributes:
+      label: Progress and evidence
+      description: Record the commit, checks, outcomes and remaining blockers. Use synthetic data only.
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and ownership

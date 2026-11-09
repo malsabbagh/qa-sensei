@@ -1,0 +1,69 @@
+{
+  "schema": "sensei.qa.acceptance/1.0",
+  "workflow_id": "g34-pilot",
+  "baseline_commit": "22b554a8e5d569a878b89662d011941e9dba0821",
+  "qualification": "not_run",
+  "claim": "Component limit mismatch is prior evidence; no full hosted post-effect failure claimed.",
+  "checks": [
+    {
+      "id": "G34-baseline",
+      "required": true,
+      "expected_behavior": "Full retained-result/SessionRecord/action fixture reproduces terminal refusal or names earlier guard.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-small",
+      "required": true,
+      "expected_behavior": "Ordinary supported result retained completely.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-boundaries",
+      "required": true,
+      "expected_behavior": "Below, at and above actual field/count/disposition/carrier/manifest/root bounds; exact bytes.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-utf8",
+      "required": true,
+      "expected_behavior": "Valid multibyte paths measured as serialized UTF-8 bytes.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-metadata",
+      "required": true,
+      "expected_behavior": "Mandatory result token, both disposition forms, actual binding overhead, low-compressibility coverage.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-effects",
+      "required": true,
+      "expected_behavior": "Observable effect recorder proves approved refusal boundary before relevant irreversible effect.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-restart",
+      "required": true,
+      "expected_behavior": "Fresh-process replay retains checkpoints and does not duplicate effects/inference.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-integrity",
+      "required": true,
+      "expected_behavior": "Changed source, altered digests, stale approval, malformed binding and wrong result token refuse.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-negative",
+      "required": true,
+      "expected_behavior": "Invalid scope/path/count and unrelated errors classified separately.",
+      "status": "not_run"
+    },
+    {
+      "id": "G34-compatibility",
+      "required": true,
+      "expected_behavior": "Existing valid persisted records and ordinary command paths remain usable.",
+      "status": "not_run"
+    }
+  ]
+}

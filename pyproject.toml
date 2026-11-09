@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qa-sensei"
+version = "0.1.0a1"
+description = "Independent local QA execution and evidence bootstrap"
+requires-python = ">=3.11"
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+
+[project.scripts]
+qa-sensei = "qasensei:main"
+sensei-qa = "qasensei:main"
+
+[tool.setuptools]
+py-modules = ["qasensei"]

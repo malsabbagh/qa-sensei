@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info/
+
+# Local environments, credentials and private execution evidence.
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite*
+*.db
+*.log
+evidence/
+artifacts/
+private/
+.DS_Store
