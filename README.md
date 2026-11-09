@@ -1,4 +1,9 @@
 # QASensei pilot
+Part of the four-CLI Sensei family: CodeSensei implements, ReviewSensei reviews,
+ManagerSensei coordinates, and QASensei independently verifies. CodeSensei is the
+new name for TaskAlong; existing `taskalong` command, import and state identities
+remain compatibility contracts until an explicit migration is qualified.
+
 
 Independent local QA process runner for the four-pillar Sensei pilot. Standalone bootstrap
 component. Product implementation and ReviewSensei review
